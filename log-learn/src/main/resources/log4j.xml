@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+
+    <!--无缓存，立即输出-->
+    <appender name="FILE" class="org.apache.log4j.FileAppender">
+        <param name="File" value="e:/log.out"/>
+        <param name="append" value="true"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %p %c - %m%n"/>
+        </layout>
+    </appender>
+
+    <!--有缓存，不立即输出-->
+    <!--<appender name="FILE" class="org.apache.log4j.FileAppender">
+        <param name="File" value="e:/log.out"/>
+        <param name="append" value="true"/>
+        <param name="immediateFlush" value="false"/>
+        <param name="bufferedIO" value="true"/>
+        <param name="bufferSize" value="8192"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %p %c - %m%n"/>
+        </layout>
+    </appender>-->
+
+    <!--异步appender-->
+    <!--<appender name="AsyncAppender" class="org.apache.log4j.AsyncAppender">
+        <appender-ref ref="FILE"/>
+    </appender>-->
+
+    <root>
+        <priority value="info"/>
+        <appender-ref ref="FILE"/>
+        <!--<appender-ref ref="AsyncAppender"/>-->
+    </root>
+</log4j:configuration>

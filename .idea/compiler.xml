@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="activeJDBC-learn" />
+        <module name="akka-lean-new" />
+        <module name="akka-learn" />
+        <module name="annotation-learn" />
+        <module name="asm-aop-learn" />
+        <module name="asm-learn" />
+        <module name="curotor-learn" />
+        <module name="disruptor-learn" />
+        <module name="dozer-learn" />
+        <module name="dozer-springboot" />
+        <module name="guava-learn" />
+        <module name="guice-learn" />
+        <module name="hbase-learn" />
+        <module name="instrumentation-learn" />
+        <module name="java8-learn" />
+        <module name="jedis-learn" />
+        <module name="jute-learn" />
+        <module name="kafka-learn" />
+        <module name="log-learn" />
+        <module name="maven-learn" />
+        <module name="mongodb-learn" />
+        <module name="quasar-learn" />
+        <module name="rabbitMQ-learn" />
+        <module name="redission-learn" />
+        <module name="serviceLoader-learn" />
+        <module name="spring-boot-learn" />
+        <module name="spring-core-learn" />
+        <module name="spring-test-learn" />
+        <module name="zookeeper-learn" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
+    <option name="DEPRECATION" value="false" />
+  </component>
+</project>

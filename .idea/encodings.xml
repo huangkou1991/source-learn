@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/activeJDBC-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/akka-lean-new" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/akka-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotation-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/asm-aop-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/asm-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/curotor-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/disruptor-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dozer-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dozer-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guava-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guice-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hbase-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/instrumentation-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java8-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jedis-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jute-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maven-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mongodb-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quasar-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quasar-learn/quasar-cpu.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/quasar-learn/quasar.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/quasar-learn/quasar内存.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/quasar-learn/thread-cpu.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/quasar-learn/thread内存.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/rabbitMQ-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redission-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serviceLoader-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-core-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-test-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper-learn" charset="UTF-8" />
+  </component>
+</project>

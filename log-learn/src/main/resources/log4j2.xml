@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" monitorInterval="30">
+    <Appenders>
+
+        <!--无缓存，立即输出-->
+        <File name="File" fileName="e:/log4j2.out" append="true">
+            <PatternLayout>
+            <Pattern>%d{HH:mm:ss.SSS} %p %c - %m%n</Pattern>
+        </PatternLayout>
+        </File>
+
+        <!--有缓存，不立即输出-->
+        <!--<File name="File" fileName="e:/log.out" append="true"
+              immediateFlush="false" bufferedIO="true" bufferSize="8192">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} %p %c - %m%n</Pattern>
+            </PatternLayout>
+        </File>-->
+
+        <!--异步appender-->
+        <!--<Async name="Async">
+            <AppenderRef ref="File"/>
+        </Async>-->
+    </Appenders>
+    <Loggers>
+        <Root level="info" >
+            <!--<AppenderRef ref="Async"/>-->
+            <AppenderRef ref="File"/>
+        </Root>
+        <!--异步logger-->
+        <!--<AsyncRoot level="info" >
+            <AppenderRef ref="File"/>
+        </AsyncRoot>-->
+    </Loggers>
+</Configuration>

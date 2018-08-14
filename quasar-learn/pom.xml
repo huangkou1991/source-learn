@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>source-learn</artifactId>
+        <groupId>com.learn</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>quasar-learn</artifactId>
+
+    <name>quasar-learn</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/co.paralleluniverse/quasar-core -->
+        <dependency>
+            <groupId>co.paralleluniverse</groupId>
+            <artifactId>quasar-core</artifactId>
+            <version>0.7.9</version>
+        </dependency>
+        <dependency>
+            <groupId>jdk.tools</groupId>
+            <artifactId>jdk.tools</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <!-- &lt;!&ndash; https://mvnrepository.com/artifact/co.paralleluniverse/quasar-core &ndash;&gt;
+         <dependency>
+             <groupId>co.paralleluniverse</groupId>
+             <artifactId>quasar-core</artifactId>
+             <version>0.7.4</version>
+         </dependency>
+
+
+         <dependency>
+             <groupId>com.esotericsoftware.kryo</groupId>
+             <artifactId>kryo</artifactId>
+             <version>2.21</version>
+         </dependency>
+         &lt;!&ndash; https://mvnrepository.com/artifact/com.google.guava/guava &ndash;&gt;
+         <dependency>
+             <groupId>com.google.guava</groupId>
+             <artifactId>guava</artifactId>
+             <version>23.0</version>
+         </dependency>-->
+    </dependencies>
+
+    <build>
+        <!--<plugins>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.5.1</version>
+                <executions>
+                    <execution>
+                        <id>getClasspathFilenames</id>
+                        <goals>
+                            <goal>properties</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+            <!--<plugin>
+                <groupId>co.paralleluniverse</groupId>
+                <artifactId>quasar-core</artifactId> &lt;!&ndash; Run with "mvn compile maven-dependency-plugin:properties exec:exec" &ndash;&gt;
+                <version>0.7.4</version>
+                <configuration>
+                    <mainClass>testgrp.QuasarHelloWorld</mainClass>
+                    <workingDirectory>target/classes</workingDirectory>
+                    <executable>java</executable>
+                    <arguments>
+                        &lt;!&ndash; Turn off before production &ndash;&gt;
+                        <argument>-Dco.paralleluniverse.fibers.verifyInstrumentation=true</argument>
+
+                        &lt;!&ndash; Quasar Agent &ndash;&gt;
+                        <argument>-javaagent:${co.paralleluniverse:quasar-core:jar}</argument>
+
+                        &lt;!&ndash; Classpath &ndash;&gt;
+                        <argument>-classpath</argument> <classpath/>
+
+                        &lt;!&ndash; Main class &ndash;&gt;
+                        <argument>com.learn.App</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <argLine>-Dco.paralleluniverse.fibers.verifyInstrumentation=true</argLine>
+
+                    &lt;!&ndash; Quasar Agent &ndash;&gt;
+                    <argLine>-javaagent:${co.paralleluniverse:quasar-core:jar}</argLine>
+                </configuration>
+            </plugin>-->
+        <!--</plugins>-->
+    </build>
+</project>

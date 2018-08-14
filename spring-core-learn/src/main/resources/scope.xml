@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.learn.spring.scope.Man" id="man" scope="prototype">
+        <property name="name" value="wade">
+        </property>
+    </bean>
+
+    <!--第一种方法 scope-->
+    <!--<bean class="com.learn.spring.scope.Person" id="person">
+        <property name="man">
+            <ref bean="man"/>
+        </property>
+        <lookup-method name="getMan" bean="man"/>
+    </bean>-->
+    <!--lookup 每次返回一个新的对象-->
+
+    <!--第二种，通过实现BeanFactoryAware接口-->
+    <bean class="com.learn.spring.scope.PersonBeanFactoryAware" id="person">
+
+    </bean>
+</beans>

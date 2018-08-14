@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration >
+
+    <!--无缓存，立即输出-->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>e:/log.out</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %p %c - %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--有缓存，不立即输出-->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>e:/log.out</file>
+        <append>true</append>
+        <immediateFlush>false</immediateFlush>
+        <bufferSize>8192</bufferSize>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %p %c - %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--异步appender-->
+    <appender name ="ASYNC" class= "ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>128</queueSize>
+        <immediateFlush>true</immediateFlush>
+        <bufferSize>8192</bufferSize>
+        <appender-ref ref ="FILE"/>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="ASYNC" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
