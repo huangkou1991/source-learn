@@ -23,6 +23,7 @@ public class KafkaConsumerConfig {
     @Value("${kafka.bootstrapAddress}")
     private String bootstrapAddress;
 
+
     public ConsumerFactory<String, String> consumerFactory(String groupId) {
         Map<String, Object> props = new HashMap<>();
         props.put(
