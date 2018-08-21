@@ -1,8 +1,6 @@
 package com.learn.java8.threadpool;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 /**
  * @Author :lwy
@@ -11,9 +9,20 @@ import java.util.concurrent.Executors;
  */
 public class ThreadPoolTest {
 
-    public static void main(String[] args) {
-        Executor executor = Executors.newSingleThreadExecutor();
-        executor.execute(() -> System.out.println("hello,world"));
-        ((ExecutorService) executor).shutdown();
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        //Executor executor = Executors.newSingleThreadExecutor();
+        //executor.execute(() -> System.out.println("hello,world"));
+        //((ExecutorService) executor).shutdown();
+
+        ExecutorService service=Executors.newFixedThreadPool(5);
+        Future<String> future=service.submit(()->"Hello World");
+
+        String result=future.get();
+
+        System.out.println(result);
+
+
+        ThreadPoolExecutor executor= (ThreadPoolExecutor) Executors.newCachedThreadPool();
+
     }
 }
