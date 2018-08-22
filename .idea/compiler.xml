@@ -28,6 +28,7 @@
         <module name="maven-learn" />
         <module name="mongodb-learn" />
         <module name="quasar-learn" />
+        <module name="quasar2-learn" />
         <module name="rabbitMQ-learn" />
         <module name="redission-learn" />
         <module name="serviceLoader-learn" />

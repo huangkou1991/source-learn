@@ -35,6 +35,7 @@
         <module>disruptor-learn</module>
         <module>jute-learn</module>
         <module>quasar-learn</module>
+        <module>quasar2-learn</module>
     </modules>
 
     <name>source-learn</name>
