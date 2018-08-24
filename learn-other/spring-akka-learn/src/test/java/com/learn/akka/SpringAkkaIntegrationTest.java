@@ -23,6 +23,8 @@ import static com.learn.extension.SpringExtension.SPRING_EXTENSION_PROVIDER;
  * @Author :lwy
  * @Date : 2018/8/24 11:41
  * @Description :
+ *
+ * *https://www.baeldung.com/akka-with-spring
  */
 @ContextConfiguration(classes = AppConfiguration.class)
 public class SpringAkkaIntegrationTest extends AbstractJUnit4SpringContextTests {
