@@ -17,7 +17,7 @@ public class ActorController {
     private ActorService service;
 
     @GetMapping("/actor")
-    public String actor() {
+    public String actor() throws Exception {
         return service.userActor().toString();
     }
 }
