@@ -3,6 +3,8 @@
 
 - [quasar调研文档](./quasar-learn/quasar调研文档.md)
 
+- [aerospike调研](./document/aerospike/README.md)
+
 - [dozer与disruptor原理](./document/pdf/Dozer与Disruptor分享.pdf)
 
 - [gitbook学习](./document/pdf/gitbook分享.pdf)

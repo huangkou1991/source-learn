@@ -1,0 +1,10 @@
+/data/dmp/aerospike/logs/aerospike.log {
+    daily
+    rotate 7
+    dateext
+    compress
+    olddir /data/dmp/aerospike/logs/
+    postrotate
+        /bin/kill -HUP `cat /data/dmp/aerospike/run/asd.pid`
+    endscript
+}
