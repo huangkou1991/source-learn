@@ -18,3 +18,7 @@
 - [Hbase学习](./document/pdf/认识hbase.pdf)
 
 - [日志埋点](./document/pdf/集成测试及日志埋点.pdf)
+
+- [分布式数据仓库演变](./document/pdf/分布式数据仓库在公司的应用与演变.pdf)
+
+- [麦田广告系统架构](./document/pdf/麦田广告系统架构.pdf)
