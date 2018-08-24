@@ -33,6 +33,7 @@
         <module name="redission-learn" />
         <module name="serviceLoader-learn" />
         <module name="spring-akka-learn" />
+        <module name="spring-book-akka" />
         <module name="spring-boot-learn" />
         <module name="spring-core-learn" />
         <module name="spring-test-learn" />

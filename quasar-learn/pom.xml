@@ -35,12 +35,12 @@
             <artifactId>quasar-core</artifactId>
             <version>0.7.9</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>jdk.tools</groupId>
             <artifactId>jdk.tools</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency>-->
 
 
         <!-- &lt;!&ndash; https://mvnrepository.com/artifact/co.paralleluniverse/quasar-core &ndash;&gt;

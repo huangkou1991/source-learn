@@ -1,4 +1,4 @@
-package com.learn.service;
+package com.wade.springbookakka.service;
 
 import org.springframework.stereotype.Service;
 

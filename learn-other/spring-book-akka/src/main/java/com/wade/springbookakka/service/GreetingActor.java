@@ -1,7 +1,6 @@
-package com.learn.akka;
+package com.wade.springbookakka.service;
 
 import akka.actor.UntypedActor;
-import com.learn.service.GreetingService;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
