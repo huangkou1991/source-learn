@@ -28,7 +28,7 @@ public class GreetingActor extends UntypedActor {
             String name=((Greet) message).getName();
             getSender().tell(greetingService.greet(name),getSelf());
         }else{
-            //unhandled(message)
+            unhandled(message);
         }
     }
 

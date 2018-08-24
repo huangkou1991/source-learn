@@ -40,6 +40,8 @@ public class SpringAkkaIntegrationTest extends AbstractJUnit4SpringContextTests 
         Future<Object> result = ask(greeter, new GreetingActor.Greet("John"), timeout);
 
         Assert.assertEquals("hello,John", Await.result(result, duration));
+
+        System.out.println(greeter.path());
     }
 
     @After
