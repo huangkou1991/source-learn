@@ -15,6 +15,7 @@
         <module>spring-akka-learn</module>
         <module>spring-book-akka</module>
         <module>spring-boot-web-akka</module>
+        <module>spring-boot-hystrix-learn</module>
     </modules>
 
 

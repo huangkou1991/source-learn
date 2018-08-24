@@ -34,6 +34,7 @@
         <module name="serviceLoader-learn" />
         <module name="spring-akka-learn" />
         <module name="spring-book-akka" />
+        <module name="spring-boot-hystrix-learn" />
         <module name="spring-boot-learn" />
         <module name="spring-boot-web-akka" />
         <module name="spring-core-learn" />

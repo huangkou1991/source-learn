@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/learn-other/pom.xml" />
         <option value="$PROJECT_DIR$/learn-other/spring-book-akka/pom.xml" />
         <option value="$PROJECT_DIR$/learn-other/spring-boot-web-akka/pom.xml" />
+        <option value="$PROJECT_DIR$/learn-other/spring-boot-hystrix-learn/pom.xml" />
       </list>
     </option>
   </component>
