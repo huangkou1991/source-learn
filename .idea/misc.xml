@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/kafka-learn/pom.xml" />
         <option value="$PROJECT_DIR$/learn-other/pom.xml" />
         <option value="$PROJECT_DIR$/learn-other/spring-book-akka/pom.xml" />
+        <option value="$PROJECT_DIR$/learn-other/spring-boot-web-akka/pom.xml" />
       </list>
     </option>
   </component>
