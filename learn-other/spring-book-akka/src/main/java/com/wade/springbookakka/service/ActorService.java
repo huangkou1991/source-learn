@@ -29,7 +29,7 @@ public class ActorService {
                         .withRouter(new SmallestMailboxPool(50000)), "detectRouterActor");
         return routerActorRef.path();*/
 
-        ActorRef userRef = actorSystem.actorOf(springExtension.props("greetingActor"),"greetActor");
+        ActorRef userRef = actorSystem.actorOf(springExtension.props("detectActor2"),"greetActor");
 
         return userRef.path();
     }

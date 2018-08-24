@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
  * @Date : 2018/8/24 11:01
  * @Description :定义一个无类型的actor
  */
-@Component
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+@Component("greetingActor")
+@Scope("prototype")
 public class GreetingActor extends UntypedActor {
 
     private GreetingService greetingService;
