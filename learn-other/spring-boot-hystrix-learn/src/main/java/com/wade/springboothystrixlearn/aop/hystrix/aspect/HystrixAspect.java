@@ -51,7 +51,10 @@ public class HystrixAspect {
                 .andCommandKey(HystrixCommandKey.Factory.asKey(key))
                 .andCommandPropertiesDefaults(HystrixCommandProperties.Setter()
                         .withExecutionTimeoutInMilliseconds(executionTimeout)
-                        .withCircuitBreakerSleepWindowInMilliseconds(sleepWindow))
+                        .withCircuitBreakerSleepWindowInMilliseconds(sleepWindow)
+                        .withCircuitBreakerEnabled(true)
+                        //窗口时间内最小的失败次数
+                        .withCircuitBreakerRequestVolumeThreshold(2))
                 .andThreadPoolPropertiesDefaults(HystrixThreadPoolProperties.Setter()
                         .withCoreSize(coreThreadCount)
                         .withMaxQueueSize(queueCount)
