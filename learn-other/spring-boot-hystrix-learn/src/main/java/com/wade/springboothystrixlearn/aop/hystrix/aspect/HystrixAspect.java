@@ -44,6 +44,9 @@ public class HystrixAspect {
     @Value("${remoteservice.command.task.queue.size}")
     private int queueCount;
 
+    @Value("${remoteservice.command.request.threshold}")
+    private int requestThreshold;
+
     @PostConstruct
     private void init() {
 
@@ -54,7 +57,7 @@ public class HystrixAspect {
                         .withCircuitBreakerSleepWindowInMilliseconds(sleepWindow)
                         .withCircuitBreakerEnabled(true)
                         //窗口时间内最小的失败次数
-                        .withCircuitBreakerRequestVolumeThreshold(2))
+                        .withCircuitBreakerRequestVolumeThreshold(requestThreshold))
                 .andThreadPoolPropertiesDefaults(HystrixThreadPoolProperties.Setter()
                         .withCoreSize(coreThreadCount)
                         .withMaxQueueSize(queueCount)
