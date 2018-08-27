@@ -6,6 +6,10 @@
  *
  *  * https://www.cnblogs.com/barrywxx/p/8525907.html
  *  https://www.baeldung.com/java-delay-queue
+ *
+ *  https://www.cnblogs.com/barrywxx/p/8525907.html   模拟订单实现
+ *
+ *  https://www.cnblogs.com/hzmark/p/mq-delay-msg.html 延迟队列实现
  *  *
  */
 package com.learn.delayqueue;
