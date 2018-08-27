@@ -21,8 +21,8 @@ public class RemoteServiceTestCommand extends HystrixCommand<String> {
         return serviceTestSimulator.execute();
     }
 
-    @Override
+    /*@Override
     protected String getFallback() {
         return "this is fallback....";
-    }
+    }*/
 }
