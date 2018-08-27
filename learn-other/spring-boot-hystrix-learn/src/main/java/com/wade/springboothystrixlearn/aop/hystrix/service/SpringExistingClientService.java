@@ -27,4 +27,10 @@ public class SpringExistingClientService {
         return new RemoteServiceTestSimulator(remoteServiceDelay).execute();
     }
 
+    //基于注解 springCloud中
+    //@HystrixCommand
+    public String invokeRemoteServiceWithHystrixAnnotation() throws InterruptedException {
+        return new RemoteServiceTestSimulator(remoteServiceDelay).execute();
+    }
+
 }
