@@ -38,6 +38,7 @@
         <module>quasar2-learn</module>
         <module>learn-other</module>
         <module>avro-learn</module>
+        <module>concurrency-learn</module>
     </modules>
 
     <name>source-learn</name>

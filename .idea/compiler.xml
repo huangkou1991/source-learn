@@ -13,6 +13,7 @@
         <module name="asm-aop-learn" />
         <module name="asm-learn" />
         <module name="avro-learn" />
+        <module name="concurrency-learn" />
         <module name="curotor-learn" />
         <module name="disruptor-learn" />
         <module name="dozer-learn" />
