@@ -4,6 +4,7 @@ import com.learn.nettyspringbootserver.handler.HeartBeatSimpleHandle;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
+import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
@@ -22,6 +23,7 @@ public class HeartBeatInitializer extends ChannelInitializer<Channel> {
         ChannelPipeline pipeline=channel.pipeline();
         //监测心跳
         pipeline.addLast(new IdleStateHandler(5, 0, 0, TimeUnit.SECONDS))
+                .addLast(new LineBasedFrameDecoder(1024))
                 .addLast(new StringDecoder())
                 .addLast(new StringEncoder())
                 .addLast(new HeartBeatSimpleHandle());

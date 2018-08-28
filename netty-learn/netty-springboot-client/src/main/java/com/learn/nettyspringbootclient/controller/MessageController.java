@@ -20,4 +20,13 @@ public class MessageController {
     public void msg() {
         messageService.sendMsg();
     }
+
+    //模拟TCP 拆、粘包？
+    @GetMapping("/msg1")
+    public void msg1() {
+        for(int i=0;i<100;i++){
+            messageService.sendMsg();
+        }
+
+    }
 }

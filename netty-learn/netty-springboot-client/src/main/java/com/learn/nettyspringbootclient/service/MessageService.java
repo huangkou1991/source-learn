@@ -17,6 +17,6 @@ public class MessageService {
 
 
     public void sendMsg(){
-        heartBeatClient.sendMsg("hello");
+        heartBeatClient.sendMsg("test");
     }
 }

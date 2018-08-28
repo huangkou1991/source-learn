@@ -3,6 +3,7 @@ package com.learn.nettyspringbootclient.init;
 import com.learn.nettyspringbootclient.handler.EchoClientHandler;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
+import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import io.netty.handler.timeout.IdleStateHandler;
@@ -18,6 +19,8 @@ public class CustomerHandleInitializer extends ChannelInitializer<Channel> {
         channel.pipeline()
                 //10 秒没发送消息 将IdleStateHandler 添加到 ChannelPipeline 中
                 .addLast(new IdleStateHandler(0, 10, 0))
+                //解决粘包，拆包
+                .addLast(new LineBasedFrameDecoder(1024))
                 .addLast(new StringDecoder())
                 .addLast(new StringEncoder())
                 .addLast(new EchoClientHandler())
