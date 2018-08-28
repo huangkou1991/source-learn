@@ -14,6 +14,7 @@ import java.util.concurrent.TransferQueue;
  */
 public class LinkedTransferQueueDemo {
     static TransferQueue<String> lnkTransQueue = new LinkedTransferQueue<String>();
+
     public static void main(String[] args) {
         ExecutorService exService = Executors.newFixedThreadPool(2);
         Producer producer = new LinkedTransferQueueDemo().new Producer();
@@ -22,30 +23,32 @@ public class LinkedTransferQueueDemo {
         exService.execute(consumer);
         exService.shutdown();
     }
-    class Producer implements Runnable{
+
+    class Producer implements Runnable {
         @Override
         public void run() {
-            for(int i=0;i<3;i++){
+            for (int i = 0; i < 3; i++) {
                 try {
                     System.out.println("Producer is waiting to transfer...");
-                    lnkTransQueue.transfer("A"+i);
-                    System.err.println("producer transfered element: A"+i);
+                    lnkTransQueue.transfer("A" + i);
+                    System.err.println("producer transfered element: A" + i);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
         }
     }
-    class Consumer implements Runnable{
+
+    class Consumer implements Runnable {
         @Override
         public void run() {
-            for(int i=0;i<3;i++){
+            for (int i = 0; i < 3; i++) {
                 try {
                     System.out.println("Consumer is waiting to take element...");
 
                     //注释与不注释结果比较
-                    String s= lnkTransQueue.take();
-                    System.out.println("Consumer received Element: ");
+                    String s = lnkTransQueue.take();
+                    System.out.println("Consumer received Element: " + s);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
