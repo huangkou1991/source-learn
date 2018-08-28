@@ -42,6 +42,7 @@ public class HeartBeatClient {
         boot.group(work)
                 .channel(NioSocketChannel.class)
                 .handler(new CustomerHandleInitializer());
+
         ChannelFuture future = boot.connect(host, nettyPort).sync();
         if (future.isSuccess()) {
             LOGGER.info("netty client is succeed");
@@ -54,5 +55,18 @@ public class HeartBeatClient {
     private void destory() {
         work.shutdownGracefully().syncUninterruptibly();
         LOGGER.info("关闭 Netty 成功");
+    }
+
+
+    /**
+     * 发送消息
+     *
+     * @param msg
+     */
+    public void sendMsg(String msg) {
+        ChannelFuture future = channel.writeAndFlush(msg);
+        future.addListener(channelFuture -> {
+            LOGGER.info("发送消息成功。");
+        });
     }
 }
