@@ -31,7 +31,7 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<String> {
             if (event.state() == IdleState.WRITER_IDLE) {
                 LOGGER.info("已经 10秒没有发送消息");
                 //向服务端发送消息
-                ctx.writeAndFlush("heartBeat").addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
+                ctx.writeAndFlush("heartBeat$_").addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
             }
         }
         Class clz = evt.getClass();

@@ -37,7 +37,7 @@ public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<String> {
             if (idleStateEvent.state() == IdleState.READER_IDLE) {
                 LOGGER.info("已经5秒没有收到信息！");
                 //向客户端发送消息
-                ctx.writeAndFlush("hello").addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
+                ctx.writeAndFlush("hello$_").addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
             }
         }
         super.userEventTriggered(ctx, evt);
