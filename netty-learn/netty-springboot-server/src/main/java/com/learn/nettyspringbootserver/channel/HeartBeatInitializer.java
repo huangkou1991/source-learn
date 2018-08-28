@@ -22,8 +22,9 @@ public class HeartBeatInitializer extends ChannelInitializer<Channel> {
 
         ChannelPipeline pipeline=channel.pipeline();
         //监测心跳
-        pipeline.addLast(new IdleStateHandler(5, 0, 0, TimeUnit.SECONDS))
-                .addLast(new LineBasedFrameDecoder(1024))
+        pipeline//.addLast(new LineBasedFrameDecoder(1024))
+                .addLast(new IdleStateHandler(5, 0, 0, TimeUnit.SECONDS))
+
                 .addLast(new StringDecoder())
                 .addLast(new StringEncoder())
                 .addLast(new HeartBeatSimpleHandle());

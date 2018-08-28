@@ -42,4 +42,12 @@ public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<String> {
         }
         super.userEventTriggered(ctx, evt);
     }
+
+    /**
+     * @description: 异常捕捉方法
+     */
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        System.out.println("服务端通道异常，异常消息："  + cause.getMessage());
+        ctx.close();
+    }
 }

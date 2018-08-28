@@ -17,13 +17,14 @@ public class CustomerHandleInitializer extends ChannelInitializer<Channel> {
     @Override
     protected void initChannel(Channel channel) throws Exception {
         channel.pipeline()
+                //解决粘包，拆包
+                //.addLast(new LineBasedFrameDecoder(1024))
                 //10 秒没发送消息 将IdleStateHandler 添加到 ChannelPipeline 中
                 .addLast(new IdleStateHandler(0, 10, 0))
-                //解决粘包，拆包
-                .addLast(new LineBasedFrameDecoder(1024))
+
+
                 .addLast(new StringDecoder())
                 .addLast(new StringEncoder())
-                .addLast(new EchoClientHandler())
-        ;
+                .addLast(new EchoClientHandler());
     }
 }
