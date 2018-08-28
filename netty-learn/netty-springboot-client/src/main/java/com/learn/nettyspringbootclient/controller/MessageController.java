@@ -29,4 +29,9 @@ public class MessageController {
         }
 
     }
+
+
+    //LineBasedFrameDecoder 可以基于换行符解决。
+    //DelimiterBasedFrameDecoder可基于分隔符解决。
+    //FixedLengthFrameDecoder可指定长度解决。
 }
