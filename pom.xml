@@ -40,6 +40,7 @@
         <module>avro-learn</module>
         <module>concurrency-learn</module>
         <module>netty-learn</module>
+        <module>spring-boot</module>
     </modules>
 
     <name>source-learn</name>
