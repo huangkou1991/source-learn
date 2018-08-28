@@ -29,8 +29,9 @@
         <module name="log-learn" />
         <module name="maven-learn" />
         <module name="mongodb-learn" />
-        <module name="netty-learn" />
+        <module name="netty-common" />
         <module name="netty-springboot-admin" />
+        <module name="netty-springboot-server" />
         <module name="quasar-learn" />
         <module name="quasar2-learn" />
         <module name="rabbitMQ-learn" />

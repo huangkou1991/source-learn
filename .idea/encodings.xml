@@ -33,8 +33,10 @@
     <file url="file://$PROJECT_DIR$/maven-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mongodb-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-learn/netty-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-learn/netty-springboot-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-learn/netty-springboot-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-learn/netty-springboot-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quasar-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quasar-learn/quasar-cpu.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/quasar-learn/quasar.png" charset="GBK" />
