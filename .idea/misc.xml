@@ -27,6 +27,7 @@
         <option value="$PROJECT_DIR$/learn-other/spring-boot-hystrix-learn/pom.xml" />
         <option value="$PROJECT_DIR$/netty-learn/netty-springboot-admin/pom.xml" />
         <option value="$PROJECT_DIR$/netty-learn/netty-springboot-server/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-learn/netty-springboot-client/pom.xml" />
       </list>
     </option>
   </component>
