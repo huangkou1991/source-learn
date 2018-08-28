@@ -35,6 +35,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.learn</groupId>
+            <artifactId>netty-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!--日志模块-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+
+        <!--可视化模块-->
+
     </dependencies>
 
     <build>
