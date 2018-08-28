@@ -39,6 +39,7 @@
         <module>learn-other</module>
         <module>avro-learn</module>
         <module>concurrency-learn</module>
+        <module>netty-learn</module>
     </modules>
 
     <name>source-learn</name>
