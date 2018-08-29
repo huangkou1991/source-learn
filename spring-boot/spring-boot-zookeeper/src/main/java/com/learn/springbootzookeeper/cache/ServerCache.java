@@ -24,7 +24,7 @@ public class ServerCache {
     @Autowired
     private ZKUtil zkUtil;
 
-    private AtomicLong index = new AtomicLong();
+    private AtomicLong index = new AtomicLong(0);
 
 
     public void updateNode(List<String> nodeList) {
