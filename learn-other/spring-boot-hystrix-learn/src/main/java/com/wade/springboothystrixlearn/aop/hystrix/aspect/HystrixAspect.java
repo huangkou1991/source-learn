@@ -57,7 +57,9 @@ public class HystrixAspect {
                         .withCircuitBreakerSleepWindowInMilliseconds(sleepWindow)
                         .withCircuitBreakerEnabled(true)
                         //窗口时间内最小的失败次数
-                        .withCircuitBreakerRequestVolumeThreshold(requestThreshold))
+                        .withCircuitBreakerRequestVolumeThreshold(requestThreshold)
+                        //隔离级别
+                        .withExecutionIsolationStrategy(HystrixCommandProperties.ExecutionIsolationStrategy.SEMAPHORE))
                 .andThreadPoolPropertiesDefaults(HystrixThreadPoolProperties.Setter()
                         .withCoreSize(coreThreadCount)
                         .withMaxQueueSize(queueCount)
@@ -68,6 +70,8 @@ public class HystrixAspect {
     //环绕通知
     @Around("@annotation(com.wade.springboothystrixlearn.aop.hystrix.HystrixCircuitBreaker)")
     public Object circuitBreakerAround(ProceedingJoinPoint aJoinPoint) {
+
+        //同步执行
         return new RemoteServiceCommand(config, aJoinPoint).execute();
     }
 
