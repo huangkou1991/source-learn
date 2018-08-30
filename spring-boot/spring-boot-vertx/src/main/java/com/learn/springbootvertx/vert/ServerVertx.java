@@ -3,7 +3,6 @@ package com.learn.springbootvertx.vert;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
-import io.vertx.ext.web.handler.StaticHandler;
 import org.springframework.stereotype.Component;
 
 /**
@@ -43,5 +42,6 @@ public class ServerVertx extends AbstractVerticle {
                     String out=result.result().body();
                     System.out.println(out);
                 });
+
     }
 }
