@@ -30,6 +30,7 @@
         <option value="$PROJECT_DIR$/netty-learn/netty-springboot-client/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-guava/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/spring-boot-vertx/pom.xml" />
       </list>
     </option>
   </component>

@@ -19,7 +19,7 @@ import java.util.List;
  * @Description :
  */
 
-public class JmxService {
+ class JmxService {
 
     private ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
 
