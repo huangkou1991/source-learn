@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccessLimitService {
 
-    //每秒只发出5个令牌
+    //每秒只发出500个令牌
     RateLimiter rateLimiter = RateLimiter.create(500.0);
 
     /**
