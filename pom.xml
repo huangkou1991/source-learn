@@ -41,6 +41,8 @@
         <module>concurrency-learn</module>
         <module>netty-learn</module>
         <module>spring-boot</module>
+        <module>lucene-learn</module>
+        <module>tika-learn</module>
     </modules>
 
     <name>source-learn</name>

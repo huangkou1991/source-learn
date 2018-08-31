@@ -32,6 +32,7 @@
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-guava/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-vertx/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-taobao/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/spring-boot-camel/pom.xml" />
       </list>
     </option>
   </component>

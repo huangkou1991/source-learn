@@ -30,6 +30,7 @@
     <file url="file://$PROJECT_DIR$/learn-other/spring-boot-hystrix-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/learn-other/spring-boot-web-akka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/log-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lucene-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/maven-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mongodb-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-learn" charset="UTF-8" />
@@ -49,6 +50,7 @@
     <file url="file://$PROJECT_DIR$/serviceLoader-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-camel" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-guava" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-guava/src/main/java/com/learn/springbootguava/meta/ClassAndMethod.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-guava/src/main/java/com/learn/springbootguava/meta/Stacktrace.java" charset="GBK" />
@@ -57,6 +59,7 @@
     <file url="file://$PROJECT_DIR$/spring-boot/spring-boot-zookeeper" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-core-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-test-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tika-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zookeeper-learn" charset="UTF-8" />
   </component>
 </project>
