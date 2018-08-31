@@ -97,12 +97,14 @@ public class HystrixAspect {
         //hystrix缓存
         @Override
         protected String getCacheKey() {
+            System.err.println("this is the cache");
             return super.getCacheKey();
         }
 
         //服务降级fallback逻辑
         @Override
         protected String getFallback() {
+            System.out.println("this is the fallback");
             return "this is fallback....";
         }
     }

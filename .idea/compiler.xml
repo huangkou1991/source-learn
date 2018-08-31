@@ -44,6 +44,7 @@
         <module name="spring-boot-guava" />
         <module name="spring-boot-hystrix-learn" />
         <module name="spring-boot-learn" />
+        <module name="spring-boot-taobao" />
         <module name="spring-boot-vertx" />
         <module name="spring-boot-web-akka" />
         <module name="spring-boot-zookeeper" />
