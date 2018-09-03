@@ -42,6 +42,7 @@
         <module name="spring-akka-learn" />
         <module name="spring-book-akka" />
         <module name="spring-boot" />
+        <module name="spring-boot-async" />
         <module name="spring-boot-camel" />
         <module name="spring-boot-guava" />
         <module name="spring-boot-hystrix-learn" />
