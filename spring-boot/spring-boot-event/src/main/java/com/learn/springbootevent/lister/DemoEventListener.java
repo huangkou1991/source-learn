@@ -12,11 +12,12 @@ import org.springframework.stereotype.Component;
  * @Description :
  */
 @Component
-public class DemoEventListener/* implements ApplicationListener<DemoEvent>*/ {
+public class DemoEventListener implements ApplicationListener<DemoEvent> {
 
     @Async
     //@Override
-    @EventListener
+    //@EventListener  这也可以
+    @Override
     public void onApplicationEvent(DemoEvent event) {
         System.out.println("注册成功，消息为：" + event.getName());
     }
