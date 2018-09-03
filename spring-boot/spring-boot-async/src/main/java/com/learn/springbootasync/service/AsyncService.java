@@ -2,10 +2,11 @@ package com.learn.springbootasync.service;
 
 import com.learn.springbootasync.async.service.AsyncComponent;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
 
 /**
@@ -47,5 +48,19 @@ public class AsyncService {
         String result=future.get();
         System.err.println("execute success. " + Thread.currentThread().getName());
         return result;
+    }
+
+
+    @Autowired
+    private Executor taskExecutor;
+    //jdk异步
+
+    public String jdkFuture(){
+        System.err.println("Start - jdk " + Thread.currentThread().getName());
+
+        CompletableFuture<String> future=new CompletableFuture<>();
+
+        //taskExecutor.execute();
+        return "";
     }
 }
