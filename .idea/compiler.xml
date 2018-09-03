@@ -44,6 +44,7 @@
         <module name="spring-boot" />
         <module name="spring-boot-async" />
         <module name="spring-boot-camel" />
+        <module name="spring-boot-event" />
         <module name="spring-boot-guava" />
         <module name="spring-boot-hystrix-learn" />
         <module name="spring-boot-learn" />

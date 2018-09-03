@@ -34,6 +34,7 @@
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-taobao/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-camel/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-async/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/spring-boot-event/pom.xml" />
       </list>
     </option>
   </component>
