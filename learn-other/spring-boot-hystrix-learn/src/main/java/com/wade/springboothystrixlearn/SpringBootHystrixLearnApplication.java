@@ -11,6 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 快速失败并迅速恢复
  * 尽可能优雅地降级
  * 对故障进行实时监控和指挥中心警报
+ *
+ * https://blog.csdn.net/zjcsuct/article/details/78198632
  */
 @SpringBootApplication
 public class SpringBootHystrixLearnApplication {
