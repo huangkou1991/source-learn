@@ -13,6 +13,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class DemoEventPublisher {
 
+    private static String name;
+
     @Autowired
     private ApplicationContext applicationContext;
 

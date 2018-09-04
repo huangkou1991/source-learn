@@ -50,4 +50,6 @@ public class HeartBeatSimpleHandle extends SimpleChannelInboundHandler<String> {
         System.out.println("服务端通道异常，异常消息："  + cause.getMessage());
         ctx.close();
     }
+
+
 }
