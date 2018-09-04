@@ -21,6 +21,7 @@ public class ReflectionService {
     @PostConstruct
     public void init() {
         Field field = ReflectionUtils.findField(DemoEventPublisher.class, "name");
+        assert field != null;
         field.setAccessible(true);
 
         //ApplicationContext context = null;

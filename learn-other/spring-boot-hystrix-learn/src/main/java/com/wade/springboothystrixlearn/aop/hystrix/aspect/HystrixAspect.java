@@ -133,6 +133,7 @@ public class HystrixAspect {
         return null;
 
         //3.1、注册观察者事件订阅 -- 事件注册前执行
+        //new RemoteServiceCommand(config,aJoinPoint).toObservable();
     }
 
 
