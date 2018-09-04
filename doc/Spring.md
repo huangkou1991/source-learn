@@ -11,3 +11,4 @@
  - 例子： spring-boot-hystrix   https://mp.weixin.qq.com/s/psTRi1tJ38NpV5LGtY0AYg
  
 * [x] 3.Spring反射的使用 ReflectionUtils
+* [x] 4.Spring retry组件
