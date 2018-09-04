@@ -22,4 +22,13 @@ public class AccessLimitService {
     public boolean tryAcquire() {
         return rateLimiter.tryAcquire();
     }
+
+    public void addLimiter() {
+        rateLimiter.setRate(400.0);
+        System.out.println("current: " + rateLimiter.getRate());
+    }
+
+    public void getLimiter() {
+        rateLimiter.getRate();
+    }
 }

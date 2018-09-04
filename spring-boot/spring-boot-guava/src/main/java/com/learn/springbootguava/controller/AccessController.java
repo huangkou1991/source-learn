@@ -28,16 +28,20 @@ public class AccessController {
         //尝试获取令牌
         if (accessLimitService.tryAcquire()) {
             //模拟业务执行500毫秒
-            try {
+            /*try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+            }*/
+            accessLimitService.addLimiter();
             System.err.println("aceess success [" + sdf.format(new Date()) + "]");
+            accessLimitService.addLimiter();
             return "aceess success [" + sdf.format(new Date()) + "]";
         } else {
             System.err.println("aceess limit [" + sdf.format(new Date()) + "]");
             return "aceess limit [" + sdf.format(new Date()) + "]";
         }
+
+
     }
 }
