@@ -8,6 +8,6 @@
  - 5. BeanFactoryPostProcessor Spring允许在Bean创建之前，读取Bean的元属性，并根据自己的需求对元属性进行改变，比如将Bean的scope从singleton改变为prototype。
  - 6. InitialingBean 在属性设置完毕后做一些自定义操作。 DisposableBean 在关闭容器前做一些操作
  
- - 例子： spring-boot-hystrix
+ - 例子： spring-boot-hystrix   https://mp.weixin.qq.com/s/psTRi1tJ38NpV5LGtY0AYg
  
 * [x] 3.Spring反射的使用 ReflectionUtils
