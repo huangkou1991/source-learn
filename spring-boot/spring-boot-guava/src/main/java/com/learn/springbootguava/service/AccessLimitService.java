@@ -1,6 +1,7 @@
 package com.learn.springbootguava.service;
 
 import com.google.common.util.concurrent.RateLimiter;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
@@ -11,8 +12,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccessLimitService {
 
+    //@Value("${limiter.base}")
+    private double limiter=500.0;
+
     //每秒只发出500个令牌
-    RateLimiter rateLimiter = RateLimiter.create(500.0);
+    RateLimiter rateLimiter = RateLimiter.create(limiter);
 
     /**
      * 尝试获取令牌
