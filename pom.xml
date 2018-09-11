@@ -43,6 +43,7 @@
         <module>spring-boot</module>
         <module>lucene-learn</module>
         <module>tika-learn</module>
+        <module>dubbo-learn</module>
     </modules>
 
     <name>source-learn</name>

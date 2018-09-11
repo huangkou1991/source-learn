@@ -17,6 +17,10 @@
     <file url="file://$PROJECT_DIR$/document/pdf/Redis使用规范.pdf" charset="GBK" />
     <file url="file://$PROJECT_DIR$/dozer-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dozer-springboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-learn/dubbo-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-learn/dubbo-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-learn/dubbo-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guava-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guice-learn" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hbase-learn" charset="UTF-8" />

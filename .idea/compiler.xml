@@ -18,6 +18,9 @@
         <module name="disruptor-learn" />
         <module name="dozer-learn" />
         <module name="dozer-springboot" />
+        <module name="dubbo-common" />
+        <module name="dubbo-consumer" />
+        <module name="dubbo-server" />
         <module name="guava-learn" />
         <module name="guice-learn" />
         <module name="hbase-learn" />
