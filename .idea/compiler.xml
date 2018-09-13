@@ -41,6 +41,8 @@
         <module name="quasar2-learn" />
         <module name="rabbitMQ-learn" />
         <module name="redission-learn" />
+        <module name="service-learn" />
+        <module name="service-learn-demo" />
         <module name="serviceLoader-learn" />
         <module name="spring-akka-learn" />
         <module name="spring-book-akka" />

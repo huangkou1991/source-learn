@@ -44,6 +44,7 @@
         <module>lucene-learn</module>
         <module>tika-learn</module>
         <module>dubbo-learn</module>
+        <module>service-learn</module>
     </modules>
 
     <name>source-learn</name>

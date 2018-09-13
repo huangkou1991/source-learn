@@ -35,6 +35,7 @@
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-camel/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-async/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/spring-boot-event/pom.xml" />
+        <option value="$PROJECT_DIR$/service-learn/service-learn-demo/pom.xml" />
       </list>
     </option>
   </component>
