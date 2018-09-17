@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author :lwy
@@ -16,7 +17,13 @@ import java.util.List;
 @Configuration
 public class NativeCache {
 
+    /**
+     * 可以基于时间，引用，基于大小过滤
+     */
     private static LoadingCache<String, String> loadingCache = Caffeine.newBuilder()
+            //.softValues()//软引用
+            //.maximumSize(100)//大小
+            //.expireAfterAccess(5, TimeUnit.MINUTES) //时间
             .build(s -> null);
 
 
