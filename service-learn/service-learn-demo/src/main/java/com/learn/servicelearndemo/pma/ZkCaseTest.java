@@ -20,11 +20,11 @@ import java.io.IOException;
 @AsProvider
 public class ZkCaseTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Object primary = new ZkCaseTest();
 
         // 设置服务名、开放的端口，所属的server group（用于服务发现）
-        ProviderInfo providerInfo = new ProviderInfo("test-provider-1", 8080);
+        ProviderInfo providerInfo = new ProviderInfo("test-provider-1", 8090);
         Application application = new Application(null, providerInfo, "demo");
 
         // 初始化ConfigManager实例
@@ -35,6 +35,7 @@ public class ZkCaseTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.in.read();
     }
 
     @KvStoreBean

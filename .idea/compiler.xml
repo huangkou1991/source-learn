@@ -48,6 +48,7 @@
         <module name="spring-book-akka" />
         <module name="spring-boot" />
         <module name="spring-boot-async" />
+        <module name="spring-boot-caffeine" />
         <module name="spring-boot-camel" />
         <module name="spring-boot-event" />
         <module name="spring-boot-guava" />

@@ -31,7 +31,7 @@ public class ServerCache {
         //设置为无效的cache
         cache.invalidateAll();
 
-        nodeList.forEach(node->addCache(node));
+        nodeList.forEach(this::addCache);
     }
 
     private void addCache(String node) {
