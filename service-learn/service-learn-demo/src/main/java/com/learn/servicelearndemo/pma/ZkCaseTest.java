@@ -3,6 +3,7 @@ package com.learn.servicelearndemo.pma;
 import cn.suniper.mesh.discovery.PlumApplication;
 import cn.suniper.mesh.discovery.annotation.AsProvider;
 import cn.suniper.mesh.discovery.annotation.KvStoreBean;
+import cn.suniper.mesh.discovery.cli.PlumContext;
 import cn.suniper.mesh.discovery.commons.ConfigManager;
 import cn.suniper.mesh.discovery.commons.ConnAutoInitializer;
 import cn.suniper.mesh.discovery.model.Application;
@@ -31,7 +32,8 @@ public class ZkCaseTest {
         ConfigManager configManager = ConfigManager.newBuilder().withAppInfo(application).build();
 
         try {
-            PlumApplication.launch(primary, configManager);
+            PlumContext launch = PlumApplication.launch(primary, configManager);
+            System.err.println(launch);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -41,7 +43,7 @@ public class ZkCaseTest {
     @KvStoreBean
     public ZooKeeper getZkClient() throws IOException, InterruptedException {
         ZooKeeper zooKeeper= ConnAutoInitializer.zkConnection(
-                "localhost:2181", 50000000);
+                "192.168.30.121:2181", 50000000);
         //启动注册/
 
         return zooKeeper;

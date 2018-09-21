@@ -46,8 +46,9 @@ public class SimpleClientSideLoadBalance {
 */
             // 获取可用服务列表
             RegisteredServerDynamicList list = context.getDynamicServerList();
-            System.out.println(list.getCachedListOfServers());
+            System.err.println(list.getCachedListOfServers());
 
+            System.err.println(context);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -55,6 +56,6 @@ public class SimpleClientSideLoadBalance {
     @KvStoreBean
     public ZooKeeper getZkClient() throws IOException, InterruptedException {
         return ConnAutoInitializer.zkConnection(
-                "localhost:2181", 1000);
+                "192.168.30.121:2181", 100000);
     }
 }
