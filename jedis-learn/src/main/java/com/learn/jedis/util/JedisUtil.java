@@ -1,10 +1,6 @@
 package com.learn.jedis.util;
 
-import com.learn.jedis.conn.RedisConn;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
-
-import java.util.UUID;
 
 /**
  * @author :lwy
