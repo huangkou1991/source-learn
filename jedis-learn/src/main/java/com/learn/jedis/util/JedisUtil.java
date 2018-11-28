@@ -26,6 +26,7 @@ public class JedisUtil {
                 return true;
             }
             Thread.sleep(1);
+
         }
         return false;
     }
