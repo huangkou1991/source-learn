@@ -14,7 +14,7 @@ public class LettuceTest {
 
     public static void main(String[] args) {
 
-        RedisClient client=RedisClient.create(RedisURI.create("redis://redis.cornfield-ads.slave"));
+        RedisClient client=RedisClient.create(RedisURI.create("redis://localhost:6379"));
         //System.out.println(client);
         StatefulRedisConnection<String, String> connect = client.connect();
 

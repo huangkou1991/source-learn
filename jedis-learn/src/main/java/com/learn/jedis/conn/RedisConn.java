@@ -12,7 +12,7 @@ public class RedisConn {
     private static JedisPool jedisPool;
 
     static {
-        jedisPool = new JedisPool("redis.cornfield-ads.slave");
+        jedisPool = new JedisPool("localhost");
     }
 
     /**
