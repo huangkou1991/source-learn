@@ -29,6 +29,8 @@ $ jstat -options
 
 ```
 
+jstat -gc pid 22811 5
+
 ### 3.jmap
 - 分析 Java 虚拟机堆中的对象
   
@@ -52,5 +54,7 @@ jmap -dump:live,format=b,file=filename.bin导出到一个文件中
 
 ### 6.jcmd
 - 类似于jstat
+
+
 
 
